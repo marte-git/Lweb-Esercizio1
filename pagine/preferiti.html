@@ -5,10 +5,88 @@
 <html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en" lang = "en">
 
 <head>
-    <title>Pagina incompleta</title>
+    <title>Film Preferiti</title>
+
+    <style type="text/css">
+      ul li {
+        list-style-type: square;
+        font-size: large;
+        margin-bottom: 2%;
+      }
+      
+      img.apparizione {
+            display: none; /* L'immagine è inizialmente nascosta */
+            /* Regole di posizionamento */
+            float: right;
+            position: absolute;
+            right: 38%;
+            top: 45%;
+            width: 15%;
+            border: 3px solid;
+        }
+        li:hover img {
+            /* L'immagine della locandina appare solo quando
+                si è col cursore sul titolo del film */
+            display: block;
+        }
+
+        li a {
+          text-decoration: none; /* Rimuove l'underline dagli anchor */
+          color: black;
+        }
+
+        li a:hover { /* Quando si è sul titolo di un film, questo viene ingrandito */
+          font-size: x-large;
+        }
+    </style>
+
 </head>
 <body>
-  <h1 style="text-align: center"> Questa pagina sui nostri film preferiti &egrave; ancora incompleta, presto sar&agrave; completata</h1>
+  <h1 style="text-align: center; background-color:#fefbd8; padding:5%">Lista film preferiti:</h1>
+  <p style="text-align: center; margin-bottom: 5%">Questa lista segue i nostri gusti personali.<br />
+    Per discussioni e recensioni sui seguenti film potete contattarci alle email presenti nella 
+    <a href="../es.css.3Florin.html">home page.</a></p>
 
+    <ul> <!--Il titolo del film è un link alla pagina imdb. Il cognome del regista porta alla sua pagina wiki-->
+      <li><a href="https://www.imdb.com/title/tt0816692/?ref_=fn_al_tt_1">Interstellar</a> - 
+        <a href="https://it.wikipedia.org/wiki/Christopher_Nolan">Nolan</a>
+        <img class="apparizione" src="../img/Interstellar.jpeg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt1343092/">The Great Gatsby</a> - 
+        <a href="https://it.wikipedia.org/wiki/Baz_Luhrmann">Luhrmann</a>
+          <img class="apparizione"
+          src="../img/Gatsby.jpeg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt0315733/?ref_=nv_sr_srsg_0">21 Grammi</a> - 
+        <a href="https://it.wikipedia.org/wiki/Alejandro_Gonz%C3%A1lez_I%C3%B1%C3%A1rritu">I&ntilde;&aacute;rritu</a>
+        <img class="apparizione" 
+        src="../img/21Grammi.jpg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt7286456/?ref_=nv_sr_srsg_0">Joker</a> - 
+        <a href="https://it.wikipedia.org/wiki/Todd_Phillips">Phillips</a>
+        <img class="apparizione" 
+        src="../img/Joker.jpg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt1130884/?ref_=nv_sr_srsg_0">Shutter Island</a> - 
+        <a href="https://it.wikipedia.org/wiki/Martin_Scorsese">Scorsese</a>
+        <img class="apparizione" 
+        src="../img/Shutter.jpg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt0137523/?ref_=nv_sr_srsg_0">Fight Club</a> - 
+        <a href="https://it.wikipedia.org/wiki/David_Fincher">Fincher</a>
+        <img class="apparizione" 
+        src="../img/Fight.jpg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt0245429/?ref_=nv_sr_srsg_0">La città incantata</a> - 
+        <a href="https://it.wikipedia.org/wiki/Hayao_Miyazaki">Miyazaki</a>
+        <img class="apparizione" 
+        src="../img/Citta.jpg" alt="Locandina" />
+      </li>
+      <li><a href="https://www.imdb.com/title/tt2278388/?ref_=nv_sr_srsg_0">Grand Budapest Hotel</a> - 
+        <a href="https://it.wikipedia.org/wiki/Wes_Anderson">Anderson</a>
+        <img class="apparizione" 
+        src="../img/grand.jpg" alt="Locandina" />
+      </li>
+  </ul>
 </body>
 </html>
